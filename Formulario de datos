@@ -15,28 +15,19 @@
 
 </head>
 
-<script type="text/javascript">
 
-function dos(){//Función del doble click en la imagen
-		alert("es un perro");
-	}
-
-	
-	
-</script>
 
 <div align="center">
-<h1>Formulario de lo datos personales  </h1>
-<h1>Fernando cruz fonseca </h1>
+<h1>Formulario de datos </h1>
+<h1>Fernando cruz fonseca</h1>
 
 <body>
-
-
 <h1>Nombre(s): <input type="text" id="texto1"></h1>
 <h1>Apellido(s): <input type="text" id="texto2"></h1>
 <h1>Dirección: <input type="text" id="texto3"></h1>
 <h1>Email: <input type="text" id="texto4"></h1>
-<h1>Comentario: <input type="text" id="texto5"></h1>
+<h1>Edad: <input type="text" id="texto5"></h1>
+<h1>Comentario: <input type="text" id="texto6"></h1>
 <br>
 
 <input type="button" id="boton1" value="enviar" onclick="obtenerDatos()"> 
@@ -62,12 +53,14 @@ var txtNombre = document.getElementById("texto1").value;
 var txtApellido = document.getElementById("texto2").value;
 var txtDireccion = document.getElementById("texto3").value;
 var txtEmail = document.getElementById("texto4").value;
-var txtComentario = document.getElementById("texto5").value;
+var txtEdad = document.getElementById("texto5").value;
+var txtComentario = document.getElementById("texto6").value;
 
 document.write("Su nombre es: "+ txtNombre + "<br>");
 document.write("Su apellido es: " + txtApellido + "<br>");
 document.write("Su dirección es: " + txtDireccion + "<br>");
 document.write("Su Email es:" + txtEmail + "<br>");
+document.write("Su Edad es:" + txtEdad + "<br>");
 document.write("Su Comentario es:" + txtComentario + "<br>");
 
 
