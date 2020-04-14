@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+	<title>Progama 1</title>
+</head>
+<body>
+	
+<script>
+	var culpable = window.prompt("Eres culpable?"); // si, no
+
+	if(culpable=="si"){
+		document.write("iras a la carcel");
+	}else if(culpable=="no"){
+		document.write("iras a casa");
+	}else{
+		document.write("la documentación por favor");
+	}
+
+</script>
+
+</body>
+</html>
