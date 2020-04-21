@@ -1,0 +1,52 @@
+CODIGO  HTML
+
+<div class="alert alert-info">
+  <p>
+  Muestra de Calculo de Iva
+  </p>
+</div>
+<div class="container">
+  <div class="row">
+     <DIV clas="col-md-12">
+     
+       <div class="col-lg-4 col-md-4 col-sm-4">
+         <div clsss="form-group">
+           <input type="text" name="monto" class="form-control" placeholder="Monto" onChange="calculo();">
+         </div>
+       </div>
+       <div class="col-lg-4 col-md-4 col-sm-4">
+         <div clsss="form-group">
+           <input type="text" name="iva" class="form-control" placeholder="IVA" readonly>
+         </div>
+       </div>
+       <div class="col-lg-4 col-md-4 col-sm-4">
+         <div clsss="form-group">
+           <input type="text" name="total" class="form-control" placeholder="Total" readonly>
+         </div>
+       </div>
+       </DIV>
+  </div>
+</div>
+
+
+
+CODIGO  jQuery 1.11.0
+
+function calculo(){
+	//tasa de impuesto
+  var tasa = 16;
+  
+  //monto a calcular el impuesto
+  var monto = $("input[name=monto]").val();
+  
+  //calsulo del impuesto
+  var iva = (monto * tasa)/100;
+  
+  //se carga el iva en el campo correspondien te
+  $("input[name=iva]").val(iva);
+  
+  //se carga el total en el campo correspondiente
+  $("input[name=total]").val(parseInt(monto)+parseInt(iva));
+   
+}
+
