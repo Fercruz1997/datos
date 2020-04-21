@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class aplicacion {
+
+	public static void main(String[] args){
+		Scanner t = new Scanner(System.in);
+		double r = 0;
+		double A = 0;
+
+		System.out.println("Dame el radio");	
+		r = t.nextInt();
+
+		A = Math.PI * Math.pow(r,2);
+
+		System.out.printf("El area del ciculo es: %f",A);
+	}
+}
