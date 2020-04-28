@@ -22,10 +22,10 @@ function repite() {
 </script>
 </head>
 <body>
-<h1>Utilizar el bucle while</h1>
+<h1>Uso del bucle while</h1>
 <form action="#" name="repetir">
    <input type="text" name="numero"> Escibe un número del 1 al 100<br/><br/>
-   <input type="button" onclick="repite()" value="Pulsa para repetir" />
+   <input type="button" onclick="repite()" value="Da clic aqui  para repetir" />
 </form>
    <p id="respuesta"></p>
 </body>
