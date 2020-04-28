@@ -13,7 +13,7 @@ function repite() {
             }
          else { 
             texto.innerHTML = "Voy a repetir una frase " + num + " veces.<br/>";
-            while (i<num) { //repeticion hasta llegar al número de veces indicado.
+            while (i<num) { 
                 i++; //variar la condición.
                 texto.innerHTML += i + " Esta es una frase repetida " + num + " veces. <br/>";
                 }			
