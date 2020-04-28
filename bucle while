@@ -11,7 +11,7 @@ function repite() {
          if (num<1 || num>100 || isNaN(num) == true ) { 
             texto.innerHTML = "No has escrito un número entre 0 y 100, escribelo de nuevo y pulsa el botón.";
             }
-         else { //si el numero es válido
+         else { 
             texto.innerHTML = "Voy a repetir una frase " + num + " veces.<br/>";
             while (i<num) { //repeticion hasta llegar al número de veces indicado.
                 i++; //variar la condición.
