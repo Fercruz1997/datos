@@ -32,7 +32,7 @@ fetch('https://pokeapi.co/api/v2/pokemon/25/')
 renderpokemon(pokemon.sprites.front_default)
 })
 
-fetch('pokemon.jpg',{
+fetch('pokemon.json',{
 //method: 'GET',
 //headers: {
 //'Content-Type': 'application/json',
@@ -41,17 +41,16 @@ fetch('pokemon.jpg',{
 //body:JSON.stringify({
 //name: 'leonidas',
 //age: 28,
-//})
+//)
 
 
 })
 .then(response => response.json())
-.then(data =>{
-renderpokemon(data.image)
+.then(data => { data = {name: "pikachu", image:"pikachu.jpg"}
 })
 
 
-fetch('pikachu.jpg')
+fetch('pikachu.jpeg')
 .then(response => response.blob())
 .then(binaryLargeObject =>{
 const domString = URL.createObjectURL(binaryLargeObject)
