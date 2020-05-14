@@ -46,7 +46,9 @@ fetch('pokemon.json',{
 
 })
 .then(response => response.json())
-.then(data => { data = {name: "pikachu", image:"pikachu.jpg"}
+.then(data => {
+//debugger
+renderpokemon(data.image)
 })
 
 
