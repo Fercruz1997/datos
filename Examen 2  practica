@@ -17,12 +17,9 @@ html.index
       </div>
       <div class="row col s12"  id="films"></div>
 
-      
+      </section>
 
-    </section>
-
-
-    <div id="modal1" class="modal">
+      <div id="modal1" class="modal">
       <div class="modal-content">
         <h4 id="name"></h4>
         <p id="height"></p>
